@@ -1,0 +1,95 @@
+
+.faq-nav {
+    flex-direction: column;
+    margin: 0 0 32px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 5px rgba(85, 85, 85, 0.096);
+  }
+  .faq-nav .nav-link {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 13px 16px;
+    background-color: #fff;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    color: #616161;
+    transition: background-color .2s ease;
+  }
+  .faq-nav .nav-link:hover {
+    background-color: #fabd8731;
+  }
+  
+  .faq-nav .nav-link:last-of-type {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom: 0;
+  }
+  .faq-nav .nav-link i.mdi {
+    margin-right: 5px;
+    font-size: 18px;
+    color: var(--secondary_color_1);
+    position: relative;
+  }
+  
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: var(--primary_color_2);
+  }
+  .card-body p{
+    color: #005579;
+  }
+  ul li {
+    font-size: 14px;
+    margin-left: 10px;
+    list-style-type: circle;
+    color: #005579;
+ }
+  
+  
+  
+  .tab-content {
+    box-shadow: 0 1px 5px rgba(85, 85, 85, 0.096);
+  }
+  .tab-content .card {
+    border-radius: 4px;
+  }
+  .tab-content .card-header {
+    border-top: 0.1px solid #fabd874f;
+    padding: 15px 16px;
+    border-radius: 0;
+    background-color: #fabd8710;
+  }
+  .tab-content .card-header h5 {
+    margin: 0;
+  }
+  .tab-content .card-header h5 button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    font-weight: 600;
+    color:var(--primary_color_2);
+    text-align: left;
+    white-space: normal;
+  }
+  .tab-content .card-header h5 button:hover, .tab-content .card-header h5 button:focus, .tab-content .card-header h5 button:active, .tab-content .card-header h5 button:hover:active {
+    text-decoration: none;
+  }
+  .tab-content .card-body p {
+    color: var(--primary_color_2);
+  }
+  .tab-content .card-body p:last-of-type {
+    margin: 0;
+  }
+  
+  .accordion > .card:not(:first-child) {
+    border-top: 0;
+  }
+  
+  .collapse.show .card-body {
+    border-bottom: 1px solid #fabd8731;
+  }
+  
