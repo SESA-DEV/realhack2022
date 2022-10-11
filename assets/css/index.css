@@ -1700,7 +1700,7 @@ preloader
 }
 .our-team .pic{
   display: inline-block;
-  width: 100%;
+  width: 210px;
   height: 100%;
   background: #448ba8;
   padding: 5px;
@@ -1713,7 +1713,7 @@ preloader
   border-radius: 50%;
 }
 .pic img{
-  width: 100%;
+  width: 200px;
   height: auto;
   border-radius: 50%;
 }
