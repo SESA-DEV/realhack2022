@@ -1,8 +1,8 @@
-<!-- 
+<!--
     ***To Change the closing time***
     -be carefull-
     need to change time in timer section in index.html and registrations.html
-    need to change time in both js in index.html and registrations.html 
+    need to change time in both js in index.html and registrations.html
  -->
 
 <!DOCTYPE html>
@@ -29,9 +29,12 @@
     <link rel="stylesheet" href="assets/css/confetti.css" />
     <link rel="stylesheet" href="assets/css/paricles.css" />
     <link rel="stylesheet" href="assets/css/particles_2.css">
+    <link rel="stylesheet" href="assets/css/flipdown.css">
     <!-- Additional JS Files -->
     <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="assets/js/TimeCircles.js"></script>
+    <script src="assets/js/flipdown.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 
 
 </head>
@@ -50,7 +53,8 @@
         (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
+            js = d.createElement(s);
+            js.id = id;
             js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
@@ -108,9 +112,6 @@
         </div>
     </header>
     <!-- ***** Header Area End ***** -->
-
-
-
 
 
     <div style="margin-top: 30px;" class="left-image-decor"></div>
@@ -212,20 +213,26 @@
     </div>
     <!-- ***** Welcome Area End ***** -->
 
-    <!-- ***** Timer Start ***** 
+    <!-- ***** Timer Start ***** -->
     <section class="section " id="timer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
                     data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
-                    <h2>Winners Announcement</h2>
-                    <div id="DateCountdown" data-date="2022-01-21 14:00:00"></div>
+                    <h2>Registration Open</h2>
+                    <div class="row justify-content-md-center">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 center">
+                            <div id="countDown" class="flipdown"></div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-    </section> -->
+        </div>
+    </section>
     <!-- ***** Timer End ***** -->
 
-    
+
     <div data-scroll-reveal="enter right move 30px over 0.3s after 0.2s"></div>
 
     <br /><br /><br /><br />
@@ -241,10 +248,10 @@
                 <div class="confetti"></div>
                 <div class="confetti"></div>
             </div>
-      
+
             <!-- *** Unblock this to show 1,2,3 teams ***-->
-           
-             <div class="row mb-5 pb-3">
+
+            <div class="row mb-5 pb-3">
                 <div class="col-12 center mb-3" data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
                     <h1 style=" font-weight: bold;color:#e1761c">Winners of RealHack 3.0</h1>
                 </div>
@@ -265,107 +272,106 @@
                     <p style="margin: auto;">University of Sri Jayewardenepura</p>
                 </div>
             </div>
-            <hr>  
+            <hr>
             <!--
-            <div class="row mt-5 pt-2">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
-                    data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
-                    <h2 style=" font-weight: bold;color:#e1761c">Final Teams</h2>
-                    <p style="max-width: 600px; margin: auto;">These are the final 15 teams that participated in the
-                        Realhack 3.0</p>
-                    <div class="teamlist">
-                        <div class="team"><b>Team Blackhawks</b><br />University of Sri Jayewardenepura</div>
-                        <div class="team"><b>EyeCoders</b><br />University of Peradeniya</div>
-                        <div class="team"><b>Bumblelee</b><br />University of Sri Jayewardenepura</div>
-                        <div class="team"><b>X2Y</b><br />University of Moratuwa</div>
-                        <div class="team"><b>Code360</b><br />University of Colombo (UCSC)</div>
-                        <div class="team"><b>Cipher</b><br />University of Peradeniya</div>
-                        <div class="team"><b>Tada</b><br />University of Moratuwa</div>
-                        <div class="team"><b>Kites</b><br />University of Moratuwa</div>
-                        <div class="team"><b>Kill-ol-bytes</b><br />University of Colombo (UCSC)</div>
-                        <div class="team"><b>Atrax</b><br />University of Moratuwa</div>
-                        <div class="team"><b>Rule_breakers</b><br />University of Moratuwa</div>
-                        <div class="team"><b>Next level</b><br />University of Moratuwa</div>
-                        <div class="team"><b>Shadow coders</b><br />University of Colombo (UCSC)</div>
-                        <div class="team"><b>Cod3raiders</b><br />Sabaragamuwa University</div>
-                        <div class="team"><b>7r4c3r</b><br />University of Colombo (UCSC)</div>
-
-                    </div>
-
+        <div class="row mt-5 pt-2">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
+                data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
+                <h2 style=" font-weight: bold;color:#e1761c">Final Teams</h2>
+                <p style="max-width: 600px; margin: auto;">These are the final 15 teams that participated in the
+                    Realhack 3.0</p>
+                <div class="teamlist">
+                    <div class="team"><b>Team Blackhawks</b><br />University of Sri Jayewardenepura</div>
+                    <div class="team"><b>EyeCoders</b><br />University of Peradeniya</div>
+                    <div class="team"><b>Bumblelee</b><br />University of Sri Jayewardenepura</div>
+                    <div class="team"><b>X2Y</b><br />University of Moratuwa</div>
+                    <div class="team"><b>Code360</b><br />University of Colombo (UCSC)</div>
+                    <div class="team"><b>Cipher</b><br />University of Peradeniya</div>
+                    <div class="team"><b>Tada</b><br />University of Moratuwa</div>
+                    <div class="team"><b>Kites</b><br />University of Moratuwa</div>
+                    <div class="team"><b>Kill-ol-bytes</b><br />University of Colombo (UCSC)</div>
+                    <div class="team"><b>Atrax</b><br />University of Moratuwa</div>
+                    <div class="team"><b>Rule_breakers</b><br />University of Moratuwa</div>
+                    <div class="team"><b>Next level</b><br />University of Moratuwa</div>
+                    <div class="team"><b>Shadow coders</b><br />University of Colombo (UCSC)</div>
+                    <div class="team"><b>Cod3raiders</b><br />Sabaragamuwa University</div>
+                    <div class="team"><b>7r4c3r</b><br />University of Colombo (UCSC)</div>
 
                 </div>
 
 
-            </div> 
-        -->
+            </div>
+
+
+        </div>
+    -->
             <!-- *** Hide this while showing 1,2,3 ***
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
-                    data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
-                    <h2 style=" font-weight: bold;color:#e1761c">Congratulations!</h2>
-                    <p style="max-width: 600px; margin: auto;">Congratulations to the 15 teams who were selected as the
-                        finalists of RealHack 3.0 We hope to see you all in the final code war of 24 hours. </p>
-                  <h3 style="color:#e1761c; margin-top: 5px;">Final 15 Teams</h3> 
-                    <div class="teamlist">
-                        <div class="team"><b>Team Blackhawks</b><br />University of Sri Jayewardenepura</div>
-                        <div class="team"><b>EyeCoders</b><br />University of Peradeniya</div>
-                        <div class="team"><b>Bumblelee</b><br />University of Sri Jayewardenepura</div>
-                        <div class="team"><b>X2Y</b><br />University of Moratuwa</div>
-                        <div class="team"><b>Code360</b><br />University of Colombo (UCSC)</div>
-                        <div class="team"><b>Cipher</b><br />University of Peradeniya</div>
-                        <div class="team"><b>Tada</b><br />University of Moratuwa</div>
-                        <div class="team"><b>Kites</b><br />University of Moratuwa</div>
-                        <div class="team"><b>Kill-ol-bytes</b><br />University of Colombo (UCSC)</div>
-                        <div class="team"><b>Atrax</b><br />University of Moratuwa</div>
-                        <div class="team"><b>Rule_breakers</b><br />University of Moratuwa</div>
-                        <div class="team"><b>Next level</b><br />University of Moratuwa</div>
-                        <div class="team"><b>Shadow coders</b><br />University of Colombo (UCSC)</div>
-                        <div class="team"><b>Cod3raiders</b><br />Sabaragamuwa University</div>
-                        <div class="team"><b>7r4c3r</b><br />University of Colombo (UCSC)</div>
-
-                    </div>
-
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
+                data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
+                <h2 style=" font-weight: bold;color:#e1761c">Congratulations!</h2>
+                <p style="max-width: 600px; margin: auto;">Congratulations to the 15 teams who were selected as the
+                    finalists of RealHack 3.0 We hope to see you all in the final code war of 24 hours. </p>
+              <h3 style="color:#e1761c; margin-top: 5px;">Final 15 Teams</h3>
+                <div class="teamlist">
+                    <div class="team"><b>Team Blackhawks</b><br />University of Sri Jayewardenepura</div>
+                    <div class="team"><b>EyeCoders</b><br />University of Peradeniya</div>
+                    <div class="team"><b>Bumblelee</b><br />University of Sri Jayewardenepura</div>
+                    <div class="team"><b>X2Y</b><br />University of Moratuwa</div>
+                    <div class="team"><b>Code360</b><br />University of Colombo (UCSC)</div>
+                    <div class="team"><b>Cipher</b><br />University of Peradeniya</div>
+                    <div class="team"><b>Tada</b><br />University of Moratuwa</div>
+                    <div class="team"><b>Kites</b><br />University of Moratuwa</div>
+                    <div class="team"><b>Kill-ol-bytes</b><br />University of Colombo (UCSC)</div>
+                    <div class="team"><b>Atrax</b><br />University of Moratuwa</div>
+                    <div class="team"><b>Rule_breakers</b><br />University of Moratuwa</div>
+                    <div class="team"><b>Next level</b><br />University of Moratuwa</div>
+                    <div class="team"><b>Shadow coders</b><br />University of Colombo (UCSC)</div>
+                    <div class="team"><b>Cod3raiders</b><br />Sabaragamuwa University</div>
+                    <div class="team"><b>7r4c3r</b><br />University of Colombo (UCSC)</div>
 
                 </div>
 
-            </div> -->
+
+            </div>
+
+        </div> -->
     </section>
 
     <!--
-        <section class="section " id="timer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
-                        data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
-                    <h2>Registration deadline extended</h2>
-                    <div id="DateCountdown" data-date="2021-08-21 00:00:00"></div>
-                    <p class="mb-4">Registration will be closed at 11.59pm on 20th of August 2021. </p>
-                    <a href="registrations.html" class="register-button">REGISTER NOW!</a>
-                </div>
+    <section class="section " id="timer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
+                    data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
+                <h2>Registration deadline extended</h2>
+                <div id="DateCountdown" data-date="2021-08-21 00:00:00"></div>
+                <p class="mb-4">Registration will be closed at 11.59pm on 20th of August 2021. </p>
+                <a href="registrations.html" class="register-button">REGISTER NOW!</a>
             </div>
-        </section>  
-        
-    -->
+        </div>
+    </section>
 
-    <!-- Registration closed 
-        <section class="section" id="timer_close" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
-                        data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
-                    <h2>Registraions closed</h2>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
-                        data-scroll-reveal="enter bottom move 30px over 0.3s after 0.2s">
-                    <img style="width: 250px;" src="assets/images/objects/clock.svg">
-                    <p class="mb-4">Registration for the REAL HACK 3.0 has been closed. <br>Thank you for your interest!
+-->
 
-                    </p>
-                </div>
+    <!-- Registration closed
+    <section class="section" id="timer_close" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
+                    data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
+                <h2>Registraions closed</h2>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
+                    data-scroll-reveal="enter bottom move 30px over 0.3s after 0.2s">
+                <img style="width: 250px;" src="assets/images/objects/clock.svg">
+                <p class="mb-4">Registration for the REAL HACK 3.0 has been closed. <br>Thank you for your interest!
+
+                </p>
             </div>
-        </section>
-    -->
+        </div>
+    </section>
+-->
 
-    
 
     <div class="right-image-decor"></div>
     <br><br>
@@ -729,7 +735,7 @@
                                 <a target="_blank" href="http://www.zincat.net/">
                                     <p> &nbsp;</p>
                                     <img class="responsive_zincat" src="assets/images/sponcers/zincat.png">
-                                    <h3 style="color: #f09d21;">Zincat <span style="color: red">Technology </span> </h3>
+                                    <h3 style="color: #f09d21;">Zincat <span style="color: red">Technology </span></h3>
                                     <p>Sri Lanka based multi–channel application development platform provider company.
                                     </p>
                                 </a>
@@ -802,8 +808,6 @@
                                 </a>
                             </fieldset>
                         </div>
-
-
 
 
                         <fieldset class="the-fieldset d-none">
@@ -886,12 +890,14 @@
                     <span class="post">IEEE President</span>
                     <ul class="social">
                         <li><a href="tel:+94763471118" class="fa fa-phone"> +94 763471118</a></li>
-                        <li><a href="mailto:ravindugunarathna@gmail.com" class="fa fa-envelope"> ravindugunarathna@gmail.com</a></li>
-                        <li><a href="https://www.linkedin.com/in/ravindu-danthika-30a771181/" class="fa fa-linkedin"> Ravindu Gunarathna</a></li>
+                        <li><a href="mailto:ravindugunarathna@gmail.com" class="fa fa-envelope">
+                                ravindugunarathna@gmail.com</a></li>
+                        <li><a href="https://www.linkedin.com/in/ravindu-danthika-30a771181/" class="fa fa-linkedin">
+                                Ravindu Gunarathna</a></li>
                     </ul>
                 </div>
             </div>
-     
+
             <div class="col-md-3 col-sm-6">
                 <div class="our-team">
                     <div class="pic">
@@ -901,12 +907,14 @@
                     <span class="post">SESA President</span>
                     <ul class="social">
                         <li><a href="tel:+94711186028" class="fa fa-phone"> +94 711186028</a></span>
-                        <li><a href="mailto:lahirusandeepa22@gmail.com" class="fa fa-envelope"> lahirusandeepa22@gmail.com</a></li>
-                        <li><a href="https://www.linkedin.com/in/lahiru-sandeepa-ab79ab181/" class="fa fa-linkedin"> Lahiru Sandeepa</a></li>
+                        <li><a href="mailto:lahirusandeepa22@gmail.com" class="fa fa-envelope">
+                                lahirusandeepa22@gmail.com</a></li>
+                        <li><a href="https://www.linkedin.com/in/lahiru-sandeepa-ab79ab181/" class="fa fa-linkedin">
+                                Lahiru Sandeepa</a></li>
                     </ul>
                 </div>
             </div>
-    
+
             <div class="col-md-3 col-sm-6">
                 <div class="our-team">
                     <div class="pic">
@@ -916,8 +924,10 @@
                     <span class="post">Organizing Committee</span>
                     <ul class="social">
                         <li><a href="tel:+94768407950" class="fa fa-phone"> +94 768407950</a></span>
-                        <li><a href="mailto:tharunvar10@gmail.com" class="fa fa-envelope"> tharunvar10@gmail.com</a></li>
-                        <li><a href="https://www.linkedin.com/in/tharun-varshanth-krishnamoorthy/" class="fa fa-linkedin"> Tharun varshanth</a></li>
+                        <li><a href="mailto:tharunvar10@gmail.com" class="fa fa-envelope"> tharunvar10@gmail.com</a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/tharun-varshanth-krishnamoorthy/"
+                                class="fa fa-linkedin"> Tharun varshanth</a></li>
                     </ul>
                 </div>
             </div>
@@ -931,7 +941,8 @@
                     <ul class="social">
                         <li><a href="tel:+94715437971" class="fa fa-phone"> +94 71 5437971</a></li>
                         <li><a href="mailto:wvganjana@gmail.com" class="fa fa-envelope"> wvganjana@gmail.com</a></li>
-                        <li><a href="https://www.linkedin.com/in/githmivithanawasam/" class="fa fa-linkedin"> Githmi Vithanawasam</a></li>
+                        <li><a href="https://www.linkedin.com/in/githmivithanawasam/" class="fa fa-linkedin"> Githmi
+                                Vithanawasam</a></li>
                     </ul>
                 </div>
             </div>
@@ -994,58 +1005,20 @@
     <!-- ***** Footer End *****-->
 
 
-
     <!-- **** JS Scripts ****-->
 
     <!-- Timer -->
-
-
-
     <script>
-
-
-        $("#DateCountdown").TimeCircles({
-            "animation": "smooth",
-            "bg_width": 1,
-            "fg_width": 0.08,
-            "circle_bg_color": "rgba(230, 230, 230, 0.5)",
-            "time": {
-                "Days": {
-                    "text": "Days",
-                    "color": "#e1761b",
-                    "show": true
-                },
-                "Hours": {
-                    "text": "Hours",
-                    "color": "#fabd87",
-                    "show": true
-                },
-                "Minutes": {
-                    "text": "Minutes",
-                    "color": "#448ba8",
-                    "show": true
-                },
-                "Seconds": {
-                    "text": "Seconds",
-                    "color": "#005579",
-                    "show": true
-                }
-            }
-        });
-        setInterval(function () {
-            $closing_time = new Date("Fri Jan 22 2022 02:00:00 GMT+0530"); //Change the closing time here
-            $current_time = new Date();
-            if ($current_time > $closing_time) {
-                $("#timer").hide();
-                // $("#timer_close").show();
-            }
-        }, 1000)
-
-
-
+        (function () {
+            const finalDate = "2022-11-02T24:00:00";
+            const timestamp = moment(finalDate).unix();
+            new FlipDown(timestamp, "countDown")
+                .start()
+                .ifEnded(() => {
+                    console.log('The countdown has ended!');
+                });
+        })();
     </script>
-
-
 
     <!-- Bootstrap -->
     <script src="assets/js/popper.js"></script>
@@ -1054,8 +1027,6 @@
     <!-- Plugins -->
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/scrollreveal.min.js"></script>
-
-
 
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
