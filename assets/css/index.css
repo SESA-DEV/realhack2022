@@ -1682,7 +1682,7 @@ preloader
   background: #ffffff;
 }
 .contact-us h2{
-  color:#005579;
+  color:#416100;
   text-align: center;
   margin-bottom: 25px;
 }
@@ -1702,14 +1702,14 @@ preloader
   display: inline-block;
   width: 210px;
   height: 100%;
-  background: #448ba8;
+  background: #416100;
   padding: 5px;
   margin-bottom: 25px;
   transition: all 0.5s ease 0s;
   border-radius: 50%;
 }
 .our-team:hover .pic{
-  background: #f09d21;
+  background: #83c702;
   border-radius: 50%;
 }
 .pic img{
@@ -1721,14 +1721,14 @@ preloader
   display: block;
   font-size: 20px;
   font-weight: 600;
-  color: #448ba8;
+  color: #416100;
   text-transform: uppercase;
   margin: 0 0 7px 0;
 }
 .our-team .post{
   display: block;
   font-size: 15px;
-  color: #448ba8;
+  color: #416100;
   text-transform: capitalize;
   margin-bottom: 15px;
 }
@@ -1741,7 +1741,7 @@ preloader
   display: inline-block;
   margin-right: 5px;
 }
-.our-team .social li a{
+/* .our-team .social li a{
   display: block;
   width: 30px;
   height: 30px;
@@ -1755,8 +1755,21 @@ preloader
 .our-team:hover .social li a{
   background:#f09d21;
   color: #fff;
+} */
+.our-team .social li a{
+  display: inline-block;
+  border: 1px solid #416100;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 5px;
+  font-size: 15px;
+  color: #416100;
+  transition: all 0.5s ease 0s;
 }
-
+.our-team:hover .social li a{
+  background: #83c702;
+  color: white;
+}
 @media only screen and (max-width: 990px){
   .our-team{ margin-bottom: 30px; }
 }
