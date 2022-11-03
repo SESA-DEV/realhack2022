@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c02370d6-d920-4dcc-865c-4077707d4fa0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/flipdown.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/flipdown.js" afterDir="false" />
+    <list default="true" id="c02370d6-d920-4dcc-865c-4077707d4fa0" name="Changes" comment="update time countdown">
+      <change afterPath="$PROJECT_DIR$/assets/images/objects/banner_logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FAQ's.html" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ's.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icons/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icons/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/objects/banar_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/objects/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/objects/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memories.html" beforeDir="false" afterPath="$PROJECT_DIR$/memories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrations.html" beforeDir="false" afterPath="$PROJECT_DIR$/registrations.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +20,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2FkqV1xjo4bRkrBNQ3LBzQ1O214" />
@@ -24,12 +36,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images/icons" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\SESA\realhack2022\assets\images\icons" />
+      <recent name="D:\Projects\SESA\realhack2022\assets\images\objects" />
       <recent name="D:\Projects\SESA\realhack2022\assets\css" />
       <recent name="D:\Projects\SESA\realhack2022\assets\js" />
     </key>
