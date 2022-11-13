@@ -1894,3 +1894,10 @@ preloader
     margin-bottom: 30px;
   }
 }
+
+/*About us*/
+
+.about-sub-title {
+  text-align: left;
+  color: var(--primary_color_2);
+}
