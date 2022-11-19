@@ -118,8 +118,8 @@
     <!-- ***** Welcome Area Start ***** -->
     <div class="welcome-area" id="welcome">
         <!-- ***** Welcome Background Animation Start ***** -->
-        <section class="particle-wrapper">
-h
+        <!-- particles -->
+        <section class="particle-wrapper" id="particles-js">
         </section>
         <!-- <section class="particles_anim">
             <div class="holder">
@@ -1030,9 +1030,17 @@ h
     <!-- Plugins -->
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
 
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
+
+    <!-- Initialize particles -->
+    <script>
+        particlesJS.load('particles-js', 'assets/config/particlesjs-config.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
 
 </body>
 
