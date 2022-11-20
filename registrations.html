@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/TimeCircles.css">
     <link rel="stylesheet" href="assets/css/register.css">
-    <link rel="stylesheet" href="assets/css/paricles.css">
 
     <!-- Additional JS Files -->
     <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
@@ -92,59 +91,7 @@
     <!-- ***** Welcome Area Start ***** -->
     <section class="welcome-area register-welcome header-text" id="reg">
         <!--Particles-->
-        <section class="particles_anim">
-            <div class="holder">
-                <div class="ring">
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                </div>
-            </div>
+        <section class="particle-wrapper" id="particles-js">
         </section>
 
         <div class="right-image-decor"></div>
@@ -318,9 +265,17 @@
     <!-- Plugins -->
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
 
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
+
+    <!-- Initialize particles -->
+    <script>
+        particlesJS.load('particles-js', 'assets/config/particlesjs-config.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
 
 
 </body>
