@@ -222,7 +222,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
                     data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
-                    <h2>Registration Open Soon</h2>
+                    <h2>Registration Close On </h2>
                     <div class="row justify-content-md-center">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 center">
                             <div id="countDown" class="flipdown"></div>
@@ -238,7 +238,7 @@
 
     <div data-scroll-reveal="enter right move 30px over 0.3s after 0.2s"></div>
 
-    <br /><br /><br /><br />
+
     <section class="section d-none">
         <div class="container">
             <div id="confettis" data-scroll-reveal="enter bottom move 30px over 0.3s after 0.2s">
@@ -342,21 +342,19 @@
         </div> -->
     </section>
 
-    <!--
     <section class="section " id="timer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
                     data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
-                <h2>Registration deadline extended</h2>
-                <div id="DateCountdown" data-date="2021-08-21 00:00:00"></div>
-                <p class="mb-4">Registration will be closed at 11.59pm on 20th of August 2021. </p>
-                <a href="registrations.html" class="register-button">REGISTER NOW!</a>
+                    <h2 class="d-none">Registration deadline extended</h2>
+                    <div id="DateCountdown" data-date="2021-08-21 00:00:00"></div>
+                    <p class="mb-4">Registration will be closed at 11.59pm on 15th of February 2023. </p>
+                    <a href="registrations.html" class="register-button">REGISTER NOW!</a>
+                </div>
             </div>
-        </div>
     </section>
 
--->
 
     <!-- Registration closed
     <section class="section" id="timer_close" >
@@ -1015,7 +1013,7 @@
     <!-- Timer -->
     <script>
         (function () {
-            const finalDate = "2023-02-06T19:00:00";
+            const finalDate = "2023-02-16T00:00:00";
             const timestamp = moment(finalDate).unix();
             new FlipDown(timestamp, "countDown")
                 .start()
