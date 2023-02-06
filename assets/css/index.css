@@ -966,7 +966,6 @@ Particles
   height: 100%;
 }
 
-
 /*
 ---------------------------------------------
 timer
@@ -974,7 +973,7 @@ timer
 */
 #timer {
   width: 100%;
-  padding: 50px 0px;
+  padding: 25px 0px;
   position: relative;
   z-index: 9;
 }
