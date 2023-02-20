@@ -354,23 +354,24 @@
     </section>
 
 
-    <!-- Registration closed
-    <section class="section" id="timer_close" >
+
+    <section class="section" id="timer_close">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
                     data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
-                <h2>Registraions closed</h2>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
-                    data-scroll-reveal="enter bottom move 30px over 0.3s after 0.2s">
-                <img style="width: 250px;" src="assets/images/objects/clock.svg">
-                <p class="mb-4">Registration for the REAL HACK 4.0 has been closed. <br>Thank you for your interest!
+                    <h2>Registraions closed</h2>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center"
+                        data-scroll-reveal="enter bottom move 30px over 0.3s after 0.2s">
+                        <img style="width: 250px;" src="assets/images/objects/clock.svg">
+                        <p class="mb-4">Registration for the REAL HACK 4.0 has been closed. <br>Thank you for your
+                            interest!
 
-                </p>
-            </div>
-        </div>
+                        </p>
+                    </div>
+                </div>
     </section>
--->
+
 
 
     <div class="right-image-decor"></div>
@@ -1020,6 +1021,15 @@
                     console.log('The countdown has ended!');
                 });
         })();
+
+        setInterval(function () {
+            $closing_time = new Date("Tue Feb 21 2023 00:00:00 GMT+0530"); //Change the closing time here
+            $current_time = new Date();
+            if ($current_time > $closing_time) {
+                $("#timer").hide();
+                $("#timer_close").show();
+            }
+        }, 1000)
     </script>
 
     <!-- Bootstrap -->
