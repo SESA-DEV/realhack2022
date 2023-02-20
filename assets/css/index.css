@@ -1257,6 +1257,9 @@ time line and rules regulations
 .top {
   margin-top: 50px;
 }
+.official-text {
+  color: var(--primary_color_2);
+}
 
 @media (max-width: 600px) {
   .top {
@@ -1282,7 +1285,7 @@ time line and rules regulations
 }
 
 .the-fieldset {
-  border: 1px solid#fabd87;
+  border: 1px solid var(--primary_color_2);
   border-bottom-style: none;
   border-left-style: none;
 
